@@ -1,0 +1,210 @@
+*{
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+.wrapper{
+  display: flex;
+  width: 100%;
+}
+#container{
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+header{
+  display: flex;
+  width: 100%;
+  height: 10vmin;
+  justify-content: space-between;
+  align-items: center;
+  background-color: rgb(53, 52, 52);
+  padding: 1.5rem;
+}
+header .options-list{
+  list-style: none;
+  display: flex;
+  justify-content: space-between;
+  width: 50%;
+}
+header .options-list li{
+  color: white;
+}
+header .options-list li:hover{
+  cursor: pointer;
+  color: dodgerblue;
+}
+header .options-list li.active{
+  color: gray;
+}
+header .inputs-list{
+  display: flex;
+  justify-content: space-between;
+  width: 45%;
+}
+header .inputs-list input{
+  background-color: transparent;
+  border: 1px solid white;
+  border-radius: 0.3rem;
+}
+header .inputs-list .login{
+  border: 1px solid white;
+  background-color: transparent;
+  color: white;
+  padding: 5px 10px;
+  border-radius: 0.2rem;
+  cursor: pointer;
+}
+header .inputs-list .sign-up{
+  background-color: yellow;
+  color: black;
+  padding: 6px 11px;
+  border-radius: 0.2rem;
+  cursor: pointer;
+}
+
+footer{
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+}
+footer ul{
+  list-style: none;
+  display: flex;
+  justify-content: space-between;
+  width: 40%;
+  margin: 20px auto;
+}
+footer ul li{
+  font-size: 20px;
+  cursor: pointer;
+}
+footer ul li:hover{
+  color: gray;
+}
+footer p{
+  margin: 20px 0;
+  color: grey;
+}
+
+#sidebar{
+  background-color: rgb(39, 37, 37);
+  width: 20%;
+  height: 90vmin;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+#sidebar ul{
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  height: 30%;
+  justify-content: space-evenly;
+  align-items: center;
+  color: white;
+}
+#sidebar ul li:hover{
+  cursor: pointer;
+  color: gray;
+}
+#sidebar ul li.active{
+  color: rgb(49, 122, 249);
+}
+#sidebar button{
+  padding: 10px 20px;
+  cursor: pointer;
+  background-color: rgb(146, 235, 11);
+  border: none;
+  margin-bottom: 40px;
+}
+form{
+  width: 80%;
+  margin: 20px;
+}
+form label{
+  font-size:20px;
+  margin-bottom: 20px;
+}
+form input{
+  margin-bottom: 20px;
+  width: 100%;
+  padding: 10px;
+}
+form div{
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+form #content{
+  width: 80%;
+  height: 100px;
+}
+#card{
+  position: relative;
+  border: 1px solid rgb(191, 188, 188);
+  flex-wrap: wrap;
+  border-radius: 1rem;
+  width: 55rem;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: space-evenly;
+  margin: 10px 50px;
+  padding: 15px;
+  box-shadow: 2px 5px 10px rgba(0,0,0,0.2);
+}
+#card .tags{
+  background-color: rgb(156, 156, 252);
+  margin: 2px 0;
+  color: rgb(81, 79, 79);
+}
+#card .tags::before{
+  content: '#';
+}
+#card .delete{
+  position: absolute;
+  right: -10px;
+  top: -10px;
+  font-size: 17px;
+  border-radius: 50%;
+  background-color: red;
+  color: white;
+  height: 30px;
+  width: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+}
+#card .delete:hover{
+  box-shadow: 0 2px 5px rgba(0,0,0,0.4);
+}
+.empty-container{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.empty-message{
+  margin: 50px 0;
+}
+.post-content{
+  margin: 20px 0;
+}
+.fetch-button{
+  padding: 10px;
+  width: 200px;
+  margin: 20px 0;
+  cursor: pointer;
+  background-color: rgb(0, 162, 255);
+  color: white;
+  border: none;
+  transition: all 0.1s ease;
+}
+.fetch-button:hover{
+  box-shadow: 0 2px 5px rgba(0,0,0,0.3);
+  background-color: white;
+  color: blue;
+  border: 2px solid blue;
+}
